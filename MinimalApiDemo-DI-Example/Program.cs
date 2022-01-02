@@ -7,9 +7,18 @@ using MinimalApiDemo;
 
 var builder = WebApplication.CreateBuilder(args);
 
-string issuer = builder.Configuration.GetValue<string>("Issuer");
-string audience = builder.Configuration.GetValue<string>("Audience");
-string secret = builder.Configuration.GetValue<string>("SecurityKey");
+var tokenSettingsSection = builder.Configuration.GetSection("TokenSettings");
+
+builder.Services.Configure<TokenSettings>(tokenSettingsSection);
+// or if you like AddOptions
+
+builder.Services.AddOptions<TokenSettings>().BindConfiguration("TokenSettings");
+
+var tokenSettings = tokenSettingsSection.Get<TokenSettings>();
+string issuer = tokenSettings.Issuer;
+string audience = tokenSettings.Audience;
+string secret = tokenSettings.SecurityKey;
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(s =>
@@ -28,6 +37,8 @@ builder.Services.AddSwaggerGen(s =>
         {new OpenApiSecurityScheme {Reference = new OpenApiReference{Type = ReferenceType.SecurityScheme,Id = "Bearer"}},Array.Empty<string>()}}
     );
 });
+
+
 builder.Services.AddScoped<ITokenService, TokenService>();
 
 builder.Services.AddAuthorization();
@@ -52,6 +63,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
@@ -67,3 +79,10 @@ app.MapGet("/login", (string login, ITokenService tokenService) =>
 app.MapGet("/dashboard", [Authorize] () => "Welcome to the secret Dashboard");
 
 app.Run();
+
+public class TokenSettings
+{
+    public string SecurityKey { get; set; }
+    public string Issuer { get; set; }
+    public string Audience { get; set; }
+}
