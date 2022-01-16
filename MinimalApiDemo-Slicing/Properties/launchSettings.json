@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "MinimalApiDemo_DI_Example": {
+    "MinimalApiDemo.SlicingEndpoints": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
@@ -29,5 +29,3 @@
     }
   }
 }
-
-
