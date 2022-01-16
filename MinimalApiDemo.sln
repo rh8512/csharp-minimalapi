@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1700.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.MinimalApiDemo.SlicingEndpoints", "MinimalApiDemo-Slicing\3.MinimalApiDemo.SlicingEndpoints.csproj", "{4A0A4EA4-7060-4730-B033-6540814B4330}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.MinimalApiDemo.SlicingEndpoints", "MinimalApiDemo.Slicing\3.MinimalApiDemo.SlicingEndpoints.csproj", "{4A0A4EA4-7060-4730-B033-6540814B4330}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.MinimalApiDemo.BasicJWT", "MinimalApiDemo.BasicJWT\1.MinimalApiDemo.BasicJWT.csproj", "{E1BC9912-6B68-445A-8AB3-D7DA0E8B0DED}"
 EndProject
