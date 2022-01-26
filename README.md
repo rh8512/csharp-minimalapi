@@ -6,3 +6,5 @@ Minimal Api Demo:
 **2.MinimalApiDemo.DIExample** - simple as above, but I introduced here TokenService and used IConfiguration & IOptions to access appsettings.json settings
 
 **3.MinimalApiDemo.SlicingEndpoints** - simple as above, but I extracted endpoints to external files using extension methods
+
+**4.MinimalApiDemo.EndpointsResponses - custom result type (HTML result) using IResult interface
