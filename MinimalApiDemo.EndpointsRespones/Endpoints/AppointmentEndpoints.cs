@@ -26,6 +26,14 @@ public static class AppointmentEndpoints
             </html>
         "));
 
+        endpointRouteBuilder.MapGet("/file", () =>
+        {
+            return Results.File($"{Environment.CurrentDirectory}/test_image.png", contentType: "image/png");
+        });
+
+
+        endpointRouteBuilder.MapGet("/json", () => new { PatientName = "Piotr", Age=99 });
+
         endpointRouteBuilder.MapGet("/appointments/{id}", [Authorize] () => "Welcome to the secret appointments by id").WithTags("Appointments"); ;
     }
 
