@@ -8,3 +8,5 @@ Minimal Api Demo:
 **3.MinimalApiDemo.SlicingEndpoints** - simple as above, but I extracted endpoints to external files using extension methods
 
 **4.MinimalApiDemo.EndpointsResponses** - custom result type (HTML result) using IResult interface
+
+**5.MinimalApiDemo.Logging ** - custom file logger, build using ILogger & ILoggerProvider
