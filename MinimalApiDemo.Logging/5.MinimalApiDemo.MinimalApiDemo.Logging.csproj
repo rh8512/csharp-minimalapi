@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>MinimalApiDemo.EndpointsRespones</RootNamespace>
+    <RootNamespace>MinimalApiDemo.Logging</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'MinimalApiDemo.SlicingEndpoints' " />
@@ -20,9 +20,11 @@
     <None Remove="Microsoft.Extensions.Options" />
     <None Remove="BenchmarkDotNet" />
     <None Remove="Resources\" />
+    <None Remove="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Endpoints\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 </Project>

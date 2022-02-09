@@ -6,10 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'MinimalApiDemo.BasicJWT' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'MinimalApiDemo.EndpointsResponses' " />
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.2" />
   </ItemGroup>
 
   <ItemGroup>

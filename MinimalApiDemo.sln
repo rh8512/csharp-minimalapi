@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.MinimalApiDemo.DIExample"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.MinimalApiDemo.MinimalApiDemo.EndpointsResponses", "MinimalApiDemo.EndpointsRespones\4.MinimalApiDemo.MinimalApiDemo.EndpointsResponses.csproj", "{A5177827-0B12-4D1D-930F-312C9FE02DF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.MinimalApiDemo.MinimalApiDemo.Logging", "MinimalApiDemo.Logging\5.MinimalApiDemo.MinimalApiDemo.Logging.csproj", "{9DBBA7A3-EB26-4FE7-BA99-45E196794012}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{A5177827-0B12-4D1D-930F-312C9FE02DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5177827-0B12-4D1D-930F-312C9FE02DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5177827-0B12-4D1D-930F-312C9FE02DF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DBBA7A3-EB26-4FE7-BA99-45E196794012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DBBA7A3-EB26-4FE7-BA99-45E196794012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DBBA7A3-EB26-4FE7-BA99-45E196794012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DBBA7A3-EB26-4FE7-BA99-45E196794012}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
