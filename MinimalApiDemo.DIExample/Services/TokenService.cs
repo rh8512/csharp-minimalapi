@@ -7,14 +7,10 @@ namespace MinimalApiDemo;
 
 public class TokenService : ITokenService
 {
-    private readonly IConfiguration _configuration;
     private readonly IOptions<TokenSettings> _tokenSettings;
 
-    public TokenService(
-        IConfiguration configuration,
-        IOptions<TokenSettings> tokenSettings)
+    public TokenService(IOptions<TokenSettings> tokenSettings)
     {
-        _configuration = configuration;
         _tokenSettings = tokenSettings;
     }
 
@@ -23,12 +19,6 @@ public class TokenService : ITokenService
         var claims = new[] {
             new Claim(ClaimTypes.Actor, login)
         };
-
-        /* Get Token Settings using IConfiguration
-        var key = _configuration.GetValue<string>("SecurityKey");
-        var issuer = _configuration.GetValue<string>("Issuer");
-        var audience = _configuration.GetValue<string>("Audience");
-        */
 
         // Get Token Settings using IOption
         var key = _tokenSettings.Value.SecurityKey;
