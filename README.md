@@ -10,3 +10,4 @@ Minimal Api Demo:
 **4.MinimalApiDemo.EndpointsResponses** - custom result type (HTML result) using IResult interface
 
 **5.MinimalApiDemo.Logging** - custom file logger, build using ILogger & ILoggerProvider
+**6.MinimalApiDemo.AWSLambdaHosting** - how to host Minimal API using AWS Lambda Service
